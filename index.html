@@ -14,7 +14,7 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="/" class="logo"><img src="/images/logo/silicon-logo-light.svg" alt=""><span>Silicon</span></a>
+                <a href="/" class="logo"><img src="/images/logo/silicon-logo-light.svg" alt="" id="silicon-logo"><span>Silicon</span></a>
                 <div class="nav-bar">
                     <span class="dark-mode-text">Dark Mode</span>
                     <label class="switch">
@@ -40,14 +40,14 @@
                             <p class="hero-ingress">We offer you a new generation of the mobile banking.<br class="ingressbr"> Save, spend & manage money in your pocket.</p>
                             <div class="download-buttons">
                                 <a href="#" class="app-store-button">
-                                    <img class="button-icon" src="/images/icon/Apple-logo-light.svg" alt="Apple" id="applestorepic">
+                                    <img class="button-icon" src="/images/icon/apple-logo-light.svg" alt="Apple" id="applestorepic">
                                     <div class="button-text-container">
                                         <span class="button-small-text-apple">Download on the</span>
                                         <span class="button-large-text">App Store</span>
                                     </div>
                                 </a>
                                 <a href="#" class="google-store-button">
-                                    <img class="button-icon" src="/images/icon/Google-logo.svg" alt="Google" id="googleplaypic">
+                                    <img class="button-icon" src="/images/icon/google-logo.svg" alt="Google" id="googleplaypic">
                                     <div class="button-text-container">
                                         <span class="button-small-text-google">GET IT ON</span>
                                         <span class="button-large-text">Google Play</span>
@@ -205,10 +205,95 @@
     </div>
 </section>
 
+<!--MARK:FAQ-->
+<section class="faq">
+    <div class="container">
+        <div class="faq-content">
+            <div class="faq-question">
+                <h2 class="faq-large-text">Any questions? Check out the FAQs</h2>
+                <p class="faq-small-text">Still have unanswered questions and need to get in touch?</p>
+            </div>
+            <div class="accordion">
+                <div class="custom-select">
+                    <div class="select-box">
+                        <span class="selected">Is any of my personal information stored in the App?</span>
+                        <div class="arrow-button"></div>
+                    </div>
+                    <div class="options">
+                        <div class="option" data-value="1">We value your privacy and take the protection of your information seriously. The app only stores essential data needed to provide its core functionality and improve your experience. Personal details are never shared with third parties without your consent, and all information is encrypted to ensure security. You are always in control of what data is saved, and you can request removal or updates at any time.</div>
+                    </div>
+                    <input type="hidden" id="selected-valute" name="selected-value">
+                </div>
+                <div class="custom-select">
+                    <div class="select-box">
+                        <span class="selected">What formats can I download my transaction history in?</span>
+                        <div class="arrow-button"></div>
+                    </div>
+                    <div class="options">
+                        <div class="option" data-value="1">You can easily export your transaction history in several widely used formats to suit your needs. Common options include PDF for a clear and printable overview, CSV for use in spreadsheets and financial tools, and Excel for more advanced analysis. Each format provides the same detailed information about your transactions, so you can choose the one that works best for organizing, sharing, or archiving your records.</div>
+                    </div>
+                    <input type="hidden" id="selected-valute" name="selected-value">
+                </div>
+                <div class="custom-select">
+                    <div class="select-box">
+                        <span class="selected">Can I schedule future transfers?</span>
+                        <div class="arrow-button"></div>
+                    </div>
+                    <div class="options">
+                        <div class="option" data-value="1">Our platform is designed with security and convenience in mind, giving you control over how your data is handled. Information is processed in compliance with industry standards, ensuring that your personal details remain safe while still allowing the app to deliver its full functionality. Clear settings let you manage what is stored, what is shared, and how long data is kept, so you always know exactly how your information is being used.</div>
+                    </div>
+                    <input type="hidden" id="selected-valute" name="selected-value">
+                </div>
+                <div class="custom-select">
+                    <div class="select-box">
+                        <span class="selected">When can I use Banking App services?</span>
+                        <div class="arrow-button"></div>
+                    </div>
+                    <div class="options">
+                        <div class="option" data-value="1">You can access Banking App services anytime, day or night, directly from your phone or computer. Most core features, such as checking balances, transferring funds, and viewing transaction history, are available 24/7. Some actions, like processing payments or scheduling transfers, may depend on banking hours, but the app will always let you know when transactions are pending. This ensures that you can manage your finances whenever it is most convenient for you.</div>
+                    </div>
+                    <input type="hidden" id="selected-valute" name="selected-value">
+                </div>
+                <div class="custom-select">
+                    <div class="select-box">
+                        <span class="selected">Can I create my own password that is easy for me to remember?</span>
+                        <div class="arrow-button"></div>
+                    </div>
+                    <div class="options">
+                        <div class="option" data-value="1">Yes, you can create your own password, and we encourage you to choose one that is both secure and easy for you to remember. For your protection, the app requires passwords to meet certain criteria, such as a minimum length and the use of a mix of letters, numbers, and symbols. This helps prevent unauthorized access while still allowing you to select something personal and memorable. If you ever forget your password, you can easily reset it through the app’s secure recovery process.</div>
+                    </div>
+                    <input type="hidden" id="selected-valute" name="selected-value">
+                </div>
+                <div class="custom-select">
+                    <div class="select-box">
+                        <span class="selected">What happens if I forget or lose my password?</span>
+                        <div class="arrow-button"></div>
+                    </div>
+                    <div class="options">
+                        <div class="option" data-value="1">If you forget or lose your password, you can quickly reset it through the secure recovery process in the app. Simply choose the “Forgot Password” option, and you will be guided through steps to verify your identity using your registered email, phone number, or other security methods. Once verified, you can create a new password and regain access to your account. This ensures that your information stays protected, even if your password is misplaced.</div>
+                    </div>
+                    <input type="hidden" id="selected-valute" name="selected-value">
+                </div>
+            </div>
+            <div class="faq-question-box">
+                <div class="faq-question-boxes">
+                    <img class="faq-question-icon" src="/images/icon/contactcall.svg">
+                    <p class="faq-box-text">Still have  questions?</p>
+                    <div class="contact-arrow"><a class="contact-blue" href="#">Contact us</a><img src="/images/icon/arrow-icon-blue.svg"></div>
+                </div>
+                <div class="faq-question-boxes">
+                    <img class="faq-question-icon" src="/images/icon/contactmsg.svg">
+                    <p class="faq-box-text">Don't like phone calls?</p>
+                    <div class="contact-arrow"><a class="contact-green" href="#">Contact us</a><img src="/images/icon/arrow-icon-green.svg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     </main>
 <footer>
 
 </footer>
-<script src="#"></script>
+<script src="/functions.js"></script>
 </body>
 </html>
