@@ -62,6 +62,25 @@ h1,h2,h3,h4,h5,h6 {
     color: var(--color-heading-text);
 }
 
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 14;
+  color: var(--color-button-text);
+  background-color: var(--color-button-background);
+  padding: 5px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.15s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--color-button-hover-background);
+}
 /* ==============================================
    MARK:Header Section
 ============================================== */
@@ -791,4 +810,171 @@ h1 {
     @media (min-width: 1920px) {
         display:none;
     }
+}
+
+/* ==============================================
+  MARK:App Features Section
+============================================== */
+
+.app-features {
+
+    @media (max-width: 1920px) {
+    display:none;
+    } 
+}
+
+.app-features-content {
+    display: flex;
+    flex-direction: column;  
+    max-width: 1076px;
+    padding-top: 100px;
+    padding-bottom: 3rem;
+    gap: 80px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    padding-right: 0%;
+    
+}
+
+.money-transfer {
+    display: flex;
+    gap: 120px; 
+}
+
+.money-transfer-text {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.money-transfer-header {
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.money-transfer-list {
+    list-style-type: none;
+    padding-left: 0;     
+    margin: 0;          
+  
+}
+
+.money-transfer-list li {
+    display: flex;        
+    align-items: center; 
+    gap: 12px;            
+    margin-bottom: 15px;  
+}
+
+.money-transfer-list li::before {
+    content: '';
+    display: block;
+    background-image: url('/images/icon/money-transfer-list-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px; 
+}
+
+.app-features-button-text {
+    margin: 0;
+    height: 44px;
+    width: 160px;
+    border: 0;
+}
+
+.payment {
+    display:flex;
+    gap: 25px;
+}
+
+.money-transfer-pic {
+    height: 526px;
+    width: auto;
+}
+
+.payment-pic {
+    height: 526px;
+    width: 500px;
+}
+
+
+.payment-text {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;    
+}
+
+.payment-big-text {
+    padding-top: 55px;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.payment-small-text {
+    margin-top: 5px;
+    margin-bottom: 2rem;
+    font-size: 16;
+}
+
+.payment-icon-row {
+    display: flex;
+    gap: 20px; 
+    width: 100%;
+    margin-bottom: 15px; 
+}
+
+.payment-icon-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.payment-icons {
+    width: 60px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* ==============================================
+  MARK:Testimonials Section
+============================================== */
+
+.testimonials {
+    background-color: var(--color-body-background-grey);
+    
+    @media (max-width: 1920px) {
+        display:none;
+    }    
+}
+
+.testimonials-content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    padding-top: 70px;  
+    padding-right: 0px;
+    padding-bottom: 75px; 
+    width: 1300px;
+}
+    [data-theme="dark"] .testimonials-content {
+        gap: 20px;
+}
+
+.testimonials-header {
+    font-size: 40px;
+    font-weight: 800;
+    margin-right: 110px;
+    margin-top: 0;
+}
+
+.testimonials-pic {
+    height: 350px;
+    width: auto;
 }
